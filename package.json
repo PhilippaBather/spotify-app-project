@@ -4,7 +4,7 @@
   "description": "The app obtains information about a specified artist using Spotify's API.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
   },
   "author": "Philippa Bather",
   "license": "BSD 3-Clause 'New' or 'Revised' License ",

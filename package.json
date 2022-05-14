@@ -1,0 +1,16 @@
+{
+  "name": "spotify_api_app",
+  "version": "1.0.0",
+  "description": "The app obtains information about a specified artist using Spotify's API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philippa Bather",
+  "license": "BSD 3-Clause 'New' or 'Revised' License ",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "node-fetch": "^2.6.6"
+  }
+}

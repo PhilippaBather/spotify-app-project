@@ -1,0 +1,257 @@
+/** 
+**** INDEX PAGE CSS FILE ****
+**/
+
+/** BACKGROUND IMAGE **/
+
+.index-main {
+    background: linear-gradient(45deg, #bbd6cd 15%, transparent),
+     url("/img/pexels-mike-114820.jpg") center/cover repeat border-box;
+}  
+/** FORM: SEARCH BAR **/
+
+.artist-form {
+    width: 50%;
+}
+
+.search-container__artist {
+    display: -webkit-box; /*older versions of Safari */
+    display: -webkit-flex; /* Google Chrome, Safari, Android Browser */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input__artist {
+    border:2px solid var(--teal-colour);
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: var(--teal-colour);
+    border-radius: 15px 20px;
+    margin: 1rem;
+}
+
+.btn-submit {
+    padding: 0.5rem;
+    background: var(--teal-colour);
+    color: var(--off-white);
+    width: 50%;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px 20px;
+}
+
+.btn-submit:hover {
+    font-weight: 900;
+    border-radius: 25px 35px;
+}
+
+.artist-search,
+.btn-submit {
+    display: -webkit-box; /*older versions of Safari */
+    display: -webkit-flex; /* Google Chrome, Safari, Android Browser */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.artist-search {
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+/** ARTIST FOUND: DISPLAY DETAILS **/
+
+.artist-info {
+    display: none;
+}
+
+.image-container,
+.widget-container {
+    padding: 2rem;
+    display: -webkit-box; /*older versions of Safari */
+    display: -webkit-flex; /* Google Chrome, Safari, Android Browser */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** <img> tag and class inserted by createImage() function in search.js  **/
+.artist-img {
+    border-radius: 50%;
+    border: black solid 1px;
+    height: 30vh;
+}
+
+.widget-container {
+    display: -webkit-box; /*older versions of Safari */
+    display: -webkit-flex; /* Google Chrome, Safari, Android Browser */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** <iframe> tag and class inserted by createWidget() function in search.js **/
+.widget-container iframe {
+    height: 400px;
+    width: 270px;
+    border: black solid 1px;  
+}
+
+.artist-genres,
+.related-artists,
+.spotify-link {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/** Spotify Link **/
+
+.spotify-link {
+    display: none;
+}
+
+.spotify-anchor {
+    text-align: center;
+    text-decoration: none;
+    color: #06782e;
+}
+
+.spotify-anchor a:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/** Media Queries **/
+
+/* Max 400px: extra small mobile screens */
+@media (max-width: 25rem) {
+    .search-container {
+        margin: 0 auto;
+    }
+
+    .btn-submit {
+       font-size: 0.8rem;
+    }
+
+    .image-container {
+        padding: 1rem;
+    }
+
+    .widget-container iframe {
+        height: 390px;
+        width: 240px;    
+    }
+
+    .related-artists,
+    .spotify-link {
+        font-size: 0.9rem;
+    }
+
+    .spotify-anchor:hover {
+        font-weight: 700;
+    }
+
+    .artist-search {
+        margin: 1.2rem;
+    }
+}
+
+/** Min width 800px: tablets **/
+@media (min-width: 50rem) {
+
+    .title-section {
+        margin-top: 1rem;
+    }
+    
+    /** Form **/
+
+    .search-container__artist {
+        flex-direction: row;
+    }
+
+    .form-input__artist {
+        width: 70%;
+        height: 3rem;
+        margin: 0 auto;
+    }
+
+    .btn-submit {
+        width: 30%;
+    }
+
+    /** Artist Found Details **/
+
+    .artist-genres,
+    .related-artists {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 1rem;
+    }
+
+    .artist-container__visual {
+        display: -webkit-box; /*older versions of Safari */
+        display: -webkit-flex; /* Google Chrome, Safari, Android Browser */
+        display: flex;
+        flex-direction: column; /* row */
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .image-container,
+    .widget-container {
+        padding: 1.5rem;
+    }
+
+    .artist-img {
+        height: 35vh;
+    }
+
+    .widget-container iframe {
+        height: 400px;
+        width: 370px;
+    }   
+
+    .spotify-link {
+        font-size: 1.2rem;
+    }
+
+    .spotify-anchor:hover {
+        font-weight: 700;
+    }
+}
+
+/*  Min width 1200px: larger screens */
+@media (min-width: 75rem) {
+
+    .artist-container__visual {
+        flex-direction: row;
+    }
+
+    .artist-img {
+        height: 50vh;
+    }
+}
+
+/** Min 1440px: extra large screens **/
+@media (min-width: 90rem) {
+    .artist-container__visual {
+        justify-content: space-evenly;
+    }
+
+    .widget-container iframe {
+        height: 430px;
+        width: 400px;
+    }
+
+    .spotify-anchor:hover {
+        font-weight: 700;
+    }
+}

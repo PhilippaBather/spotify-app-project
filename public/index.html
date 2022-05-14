@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">        
+        <title>Index Page</title>
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="css/shared.css">
+        <link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<!--Header-->
+		<header class="main-header">
+            <nav class="main-nav">
+                <div class="main-nav__logo">                    
+                    <a href="index.html">ArtistSpot</a>
+                </div>
+                <ul class="main-nav__list">
+                    <li class="main-nav__list-item"><a href="/html/about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Main-->
+        <main class="index-main">
+            <section class="app-info">
+                <div class="index-info">
+                    <h1 class="index-title">ArtistSpot</h1>
+                    <div class="index-title__info">
+                        <h2>Curious to find out your favourite artist's top ten tracks?</h2>
+                        <h2>Want to search the top tracks of any artist?</h2> 
+                        <h2>ArtistSpot uses the Spotify API to get everything you need to know about the artist
+                            you're interested in: listen to their top 10 tracks, check out their genres, and discover
+                            related artists.
+                        </h2>   
+                    </div>
+                </div>
+            </section>
+
+            <!--Artist Successful Search: Reveals Details-->
+            <section class="artist-info">
+
+                <!--Artist Container Image and Embedded Playlist-->
+                <div class="artist-container__visual">
+
+                    <!--Artist Image Container-->
+                    <div id="image-container" class="image-container">
+                    </div>
+
+                    <!--Artist Top Ten Playlist Widget-->
+                    <div id="widget-container" class="widget-container">
+                    </div>
+                </div>
+
+                <!--Artist Container Details-->
+                <div>
+                <!--Artist's Genres-->
+                    <div class="artist-genres">
+                    </div>
+
+                <!--Related Artists-->
+                    <div class="related-artists">
+                    </div>
+
+                <!--Spotify Link-->
+                    <div class="spotify-link">
+                        <p>Connect to 
+                            <a href="https://open.spotify.com/" class="spotify-anchor">Spotify</a>
+                            to check out these and other great artists or search again.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Seciton: Artist Search Form-->
+            <section class="artist-search">                
+                <!--Form-->            
+                <form action="" class="artist-form">
+                    <input type="hidden" id='hidden_token'>
+                    <div class="search-container__artist">
+                        <label for="submit" id="submit-label"></label>
+                        <input type="text" id="artist" aria-labelledby="submit-label" class="form-input__artist">
+                        <button type="submit" id="btn-submit" class="btn-submit">
+                            Search
+                        </button>
+                    </div>
+                </form>                   
+            </section>
+        </main>
+
+        <!--Footer-->	
+        <footer class="main-footer">
+            <nav>
+                <ul class="main-footer__list">
+                    <li class="main-footer__list-item">
+                        <a href="https://github.com/orgs/Hong-PhilippaTechTogether/people">Github Profile</a>
+                    </li>
+                    <li class="main-footer__list-item">Background Photo
+                        <a href="https://www.pexels.com/photo/elvis-presley-digital-wallpaper-114820/">
+                            'Elvis Presley Digital Wallpaper'
+                        </a> by
+                        <a href="https://www.pexels.com/@mikebirdy?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" class="photo-credit">
+                            Mike
+                        </a> licensed by
+                        <a href="https://www.pexels.com/">
+                            Pexels
+                        </a>                      
+                    </li>
+                </ul>                
+            </nav>
+        </footer>
+        <!--JS-->
+        <script src="index.js"></script>
+    </body>
+</html>
